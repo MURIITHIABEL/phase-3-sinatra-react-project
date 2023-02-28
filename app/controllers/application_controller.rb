@@ -20,4 +20,11 @@ class ApplicationController < Sinatra::Base
     products.to_json
   end
 
+  get '/products/:id' do
+    # look up the game in the database using its ID
+    products = Product.find(params[:id])
+    # send a JSON-formatted response of the game data
+    products.to_json
+  end
+
 end
