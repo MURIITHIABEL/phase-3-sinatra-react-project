@@ -27,5 +27,19 @@ class ApplicationController < Sinatra::Base
     products.to_json
   end
 
+  post '/products' do
+    products = Product.create(
+      name: params[:name],
+      avatar_url: params[:avatar_url],
+      model: params[:model],
+      price: params[:price]
+    )
+    products.to_json
+  end
+
+
+
+
+
 
 end
