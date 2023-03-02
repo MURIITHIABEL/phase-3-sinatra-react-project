@@ -21,6 +21,10 @@ product6 = Product.create(name: "Nissan", avatar_url: "https://www.subarukenya.c
 product7 = Product.create(name: "Nissan", avatar_url: "https://www.subarukenya.com/images/menu-wrx.jpg", model: "yes", price:5000)
 
 
+puts "Creating today..."
 
+today1 = Today.create(name: "Phones", avatar_url: "https://www.three.co.uk/cs/Satellite?blobkey=id&blobwhere=1401331509853&blobcol=urldata&blobtable=MungoBlobs")
+today2 = Today.create(name: "Toys", avatar_url: "https://images.indianexpress.com/2019/09/toys.jpg")
+today3 = Today.create(name: "Cups", avatar_url: "https://m.media-amazon.com/images/I/61HGZKNaU+L._SX466_.jpg")
 
 puts "✅ Done seeding!"

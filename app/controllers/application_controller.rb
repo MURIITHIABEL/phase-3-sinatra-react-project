@@ -16,6 +16,11 @@ class ApplicationController < Sinatra::Base
     products.to_json
   end
 
+  get '/todays' do
+    todays = Today.all
+    todays.to_json
+  end
+
   get '/products/:id' do
     products = Product.find(params[:id])
     products.to_json
