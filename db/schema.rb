@@ -19,12 +19,6 @@ ActiveRecord::Schema.define(version: 2023_03_02_131827) do
     t.integer "price"
   end
 
-  create_table "today", force: :cascade do |t|
-    t.string "name"
-    t.string "avatar_url"
-    t.integer "price"
-  end
-
   create_table "todays", force: :cascade do |t|
     t.string "name"
     t.string "avatar_url"
